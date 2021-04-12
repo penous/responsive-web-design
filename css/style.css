@@ -1,0 +1,41 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background: red;
+  }
+  .medium {
+    display: none;
+  }
+  .large {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  body {
+    background: green;
+  }
+  .small {
+    display: none;
+  }
+  .large {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: blue;
+  }
+
+  .small {
+    display: none;
+  }
+  .medium {
+    display: none;
+  }
+}
+
+body {
+  color: white;
+  font-size: 1.9em;
+}
