@@ -1,24 +1,37 @@
-@media only screen and (max-width: 600px) {
+body {
+  color: white;
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
+}
+
+@media only screen and (max-width: 300px) {
   body {
     background: red;
   }
-  .medium {
-    display: none;
-  }
-  .large {
-    display: none;
+
+  div {
+    display: block;
+    width: 33%;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
   body {
     background: green;
   }
+  div {
+    display: inline-block;
+  }
   .small {
-    display: none;
+    width: 66%;
+    float: left;
+  }
+  .medium {
+    width: 33%;
   }
   .large {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -26,16 +39,14 @@
   body {
     background: blue;
   }
-
-  .small {
-    display: none;
-  }
-  .medium {
-    display: none;
+  .small,
+  .medium,
+  .large {
+    width: 33%;
+    display: inline-block;
   }
 }
 
-body {
-  color: white;
-  font-size: 1.9em;
+div {
+  background-color: rgba(88, 81, 81, 0.4);
 }
